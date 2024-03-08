@@ -1,0 +1,264 @@
+/* Reset and Global Styles */
+body {
+    
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-heading {
+    margin-bottom: 4px;
+}
+
+.member {
+    color: rgb(125, 220, 125);
+}
+
+.member1 {
+    color: rgb(155, 158, 223);
+}
+
+.member2 {
+    color: rgb(228, 158, 135);
+}
+
+.Technology>* {
+    color: rgb(14, 36, 14);
+    border: rgb(60, 60, 46) solid 1px;
+    background-color: aliceblue;
+    padding: 2px;
+    border-radius: 4px;
+    text-align: center;
+   
+}
+
+.Productivity {
+    color: rgb(155, 158, 223);
+}
+
+.Entertainment {
+    color: rgb(228, 158, 135);
+}
+
+.Transition {
+    color: rgb(188, 69, 117);
+}
+
+.Communication {
+    color: rgb(45, 127, 162);
+}
+
+.Deployment {
+    color: rgb(218, 180, 74);
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar h1 {
+    margin: 0;
+    color: #333;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.settings-icon {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Content Wrapper Styles */
+.content-wrapper {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-item:hover {
+    background-color: #ddd;
+}
+
+.sidebar-subitems {
+    display: none;
+    padding-left: 20px;
+    border-left: 2px solid  rgb(207, 34, 34);
+}
+
+.sidebar-item.active {
+    border-left: 2px solid #007bff;
+}
+
+.sidebar-item.active .sidebar-subitems {
+    display: block;
+}
+
+/*Style for sub menu*/
+.sub-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left {
+    display: flex;
+}
+
+.top-right {
+    display: flex;
+}
+
+.sub-items {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.left {
+    margin-right: 8px;
+}
+
+.right {
+    margin-left: 8px;
+}
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+th i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+td, th {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.checked {
+    background-color: #c9f9c9 !important;
+}
+
+/* Add styles for the icons */
+.top-bar h1 {
+    margin: 0;
+    color: #333;
+}
+
+.top-bar h1 i {
+    margin-right: 5px;
+}
+
+.settings-icon,
+.chat-icon {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.tags>*{
+    background-color: #ddd;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        border-radius: 0;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        margin-top: 10px;
+    }
+
+    .content-wrapper {
+        /* flex-direction: column; */
+    }
+
+    .sidebar {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+

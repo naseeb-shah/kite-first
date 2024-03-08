@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jira Board</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="content-wrapper">
+    <div class="sidebar" id="sidebar">
+        <div class="up">
+            <div class="Menu sidebar-item">
+                <h2><i class="fab fa-jira"></i>  InnovationHub</h2>
+                <div class="menu-items">
+                    <h4>Design Team</h4>
+                    <h4>Marketing Team</h4>
+                    <h4>Development Team</h4>
+                    <h4>Create a Team</h4>
+                </div>
+            </div>
+            <div class="sidebar-item active" onclick="toggleSubitems('item1')">
+              <div class="sidebar-heading"><i class="fas fa-folder"></i> Products</div>
+              <div class="sidebar-subitems" id="item1">
+                <div>Roadmap</div>
+                <div>Feedback</div>
+                <div>Performance</div>
+                <div>Team</div>
+                <div>Analytics</div>
+              </div>
+            </div>
+            <div class="sidebar-item" onclick="toggleSubitems('item2')">
+              <span class="sidebar-heading"><i class="fas fa-folder"></i> Sales</span>
+              <div class="sidebar-subitems" id="item2">
+                <div>Feedback</div>
+                <div>Analytics</div>
+                <div>Client</div>
+              </div>
+            </div>
+            <div class="sidebar-item" onclick="toggleSubitems('item3')">
+              <span class="sidebar-heading"><i class="fas fa-folder"></i> Office</span>
+              <div class="sidebar-subitems" id="item3">
+                <div>Contact</div>
+                <div>Email</div>
+                <div>Address</div>
+              </div>
+            </div>
+        </div>
+        <div class="below">
+            <div class="sidebar-item">
+                <h4>Invite Teammates</h4>
+                <h4>Help and First Steps</h4>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="top-bar">
+            <h2>Products</h2>
+            <div class="search-box">
+              <input type="text" placeholder="Search for...">
+              <i class="fas fa-comments chat-icon"></i>
+              <i class="fas fa-cog settings-icon"></i>
+            </div>
+        </div>
+        <div class="sub-menu">
+            <div class="top-left">
+                <p class="sub-items left">All Brands</p>
+                <p class="sub-items left">Desk</p>
+                <p class="sub-items left">Tags</p>
+                <p class="sub-items left">Sort</p>
+                <p class="sub-items left">Filter</p>
+            </div>
+            <div class="top-right">
+                <p class="sub-items right">Meeting</p>
+                <p class="sub-items right">Import/Export</p>
+            </div>
+        </div>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th><i class="fas fa-plus"></i> Brand</th>
+            <th> Description</th>
+            <th> Members</th>
+            <th> Categories</th>
+            <th>Tags</th>
+            <th> Next Meeting</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
